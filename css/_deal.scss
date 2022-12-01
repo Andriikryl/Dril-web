@@ -1,0 +1,84 @@
+.deal{
+    background-color: #3A3A3A; 
+    padding-block-end: 140px;
+    .deal__box{
+        display: flex;
+        gap: 104px;
+        // max-width: 1275px;
+        flex-wrap: wrap;
+        background: #F7F7F7;
+        border-radius: 377px 0px 0px 377px;
+        padding-block: 36px;
+        padding-inline-end: 150px;
+        @media (max-width: 1200px){
+            border-radius: 230px 230px 0px 0px;
+            max-width: 545px;
+            padding-inline-end: 0px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .deal__content{
+            max-width: 450px;
+            .deal__content-titel{
+                font-family: 'Open Sans';
+                display: inline-block;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+                text-align: center;
+                letter-spacing: -0.035em;
+                color: #FFFFFF;
+                padding: 8px 34px;
+                background-color: #8096BC; 
+                margin-block-end: 41px;
+            }
+            .deal__content-price{
+                font-family: 'Federo';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 45px;
+                line-height: 50px;
+                letter-spacing: 0.02em;
+                color: #3A3A3A;    
+                span{
+                    color: #78A2CA;
+                }            
+                padding-block-end: 28px;
+            }
+            .deal__content-text{
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 26px;
+                align-items: center;
+                color: #727272;
+                padding-block-end: 28px;
+            }
+
+            .deal__content-tipe{
+                padding-block-start: 26px;
+                .content__list{
+                    display: flex;
+                    align-items: center;
+                    gap: 26px;
+                    flex-wrap: wrap;
+
+                    .list__item{
+                        padding: 12px 22px;
+                        background-color: #FFFFFF;
+                    }
+                }
+            }
+
+        }
+        .deal__img{
+            background: #FFFFFF;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            margin-inline-start: 47px;
+        }
+    }
+}

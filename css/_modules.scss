@@ -1,0 +1,103 @@
+.container{
+    $max-width: 1150px;
+    $padding: 1rem;
+    width: min($max-width, 100% - $padding);
+    margin-inline: auto;
+}
+
+
+
+
+    /* SHADOW*/
+
+
+    .blog-shadow{
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+        transition: transform ease .5s, box-shadow ease .5s;
+      }
+      .blog-shadow:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+      }
+    
+      /* SHADOW*/
+
+
+      /* BTN */
+
+      .btn{
+        padding: 8px 17px;
+        border: none;
+        cursor: pointer;
+      }
+
+
+      .btn-style{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: -0.035em;
+        background-color: white;
+        color: black;
+      }
+
+      /* BTN */
+
+      /*  product-padd */
+      
+      .product-padd{
+        padding: 71px 48px 25px 48px;
+        max-width: 255px;
+      }
+
+      .product-padd-big{
+        padding: 60px 93px 25px 93px;
+        max-width: 350px;
+      }
+
+      .product-aspect-big{
+        $n:1;
+        $d:1;
+        img{
+          object-fit: contain;
+        }
+      }
+
+      .product-aspect{
+        $n:2;
+        $d:3;
+        aspect-ratio: $n / $d;
+      }
+
+      .group-size{
+        $size:auto-fit;
+        display: grid;
+        grid-template-columns: repeat($size, minmax(255px, 1fr));
+        justify-items: center;
+        gap: 30px;
+      }
+
+      .group-size-big{
+        $size:auto-fit;
+        display: grid;
+        grid-template-columns: repeat($size, minmax(350px, 1fr));
+        justify-items: center;
+        gap: 30px;
+      }
+
+      /*  product-padd */
+
+      .deal__container{
+        display: flex;
+        justify-content: flex-end;
+        @media (max-width: 1200px){
+          $max-width: 1150px;
+          $padding: 1rem;
+          width: min($max-width, 100% - $padding);
+          margin-inline: auto;
+          display: block;
+        }
+    }

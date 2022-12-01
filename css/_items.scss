@@ -1,0 +1,107 @@
+.items{
+    background-color: #3A3A3A;    
+    padding-block-end: 150px;
+    .items__box{
+        .items__titel{
+            font-family: 'Federo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 50px;
+            letter-spacing: 0.02em;
+            text-align: center;
+            color: white;          
+            padding-block-end: 41px;  
+        }
+        .grid__grup{
+            padding-block-end: 60px;
+            .product{
+                background: #FFFFFF;
+                box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+                position: relative;
+                .product__img{
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-block-end: 31px;
+                    img{
+                        object-fit: cover;
+                    }
+                }
+                .product__content{
+                    .product__titel{
+                        font-family: 'Open Sans';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 22px;
+                        text-align: center;
+                        letter-spacing: -0.035em;
+                        color: #2A2A2B;
+                        padding-block-end: 8px;
+                    }
+                    .product__price{
+                        font-family: 'Federo';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 50px;
+                        text-align: center;
+                        letter-spacing: 0.02em;
+                        color: #8C8C8C;                        
+                    }
+                }
+                .product-sale{
+                    position: absolute;
+                    top: 12px;
+                    right: 0;
+                    .sale-name{
+                        padding: 6px 19px;
+                        display: inline-block;
+                        background: #F29731;
+                        font-family: 'Open Sans';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 22px;
+                        text-align: center;
+                        letter-spacing: -0.035em;
+                        color: #FFFFFF;
+                        margin-block-end: 5px;
+                    }
+                    .sale-price{
+                        padding: 6px 22px;
+                        display: inline-block;
+                        background-color: #9E0B0F;
+                         font-family: 'Open Sans';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 17px;
+                        line-height: 22px;
+                        text-align: center;
+                        letter-spacing: -0.035em;
+                        color: #FFFFFF;
+                        margin-block-end: 5px;
+                    }
+                }
+                .product__nav{
+                    position: absolute;
+                    right: 5px;
+                    bottom: 80px;
+                    .product__list{
+                        *+*{
+                            margin-block-start: 5px;
+                        }
+                        .product__item{
+                            background: #FFFFFF;
+                            border: 0.2px solid #454545;
+                            width: max-content;
+                            padding: 7px;                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

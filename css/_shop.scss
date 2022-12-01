@@ -1,0 +1,25 @@
+.shop{
+    background-color: #3A3A3A;    
+    padding-block-end: 50px;
+    .shop__box{
+        padding-block-start: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 100px;
+    }
+    .shop__box-info{
+        max-width: 385px;
+        align-self: center;
+        .shop__box-titel{
+            font-family: 'Federo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 50px;
+            line-height: 60px;
+            letter-spacing: 0.02em;
+            color: white;      
+            padding-block-end: 25px;
+        }
+
+    }
+}
